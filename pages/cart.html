@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koszyk - Sklep Internetowy</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Sklep Internetowy</h1>
+            </div>
+            <nav class="nav-center">
+                <ul>
+                    <li>
+                        <a href="../index.php"><img src="../media/home.svg" alt="Główna" class="icon"> Strona główna</a>
+                    </li>
+                    <li>
+                        <a href="../pages/wishlist.php"><img src="../media/heart.svg" alt="Lista życzeń" class="icon"> Lista życzeń</a>
+                    </li>
+                    <li class="active">
+                        <a href="../pages/cart.php"><img src="../media/shopping-cart.svg" alt="Koszyk" class="icon"> Koszyk</a>
+                    </li>
+                    <li>
+                        <a href="../pages/shippings.php"><img src="../media/box-open.svg" alt="Zamówienia" class="icon"> Zamówienia</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="auth-container">
+                <a href="../pages/login.php" class="auth-link">Zaloguj się / Zarejestruj się</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cart-container">
+            <h2 class="cart-title">Twój koszyk</h2>
+
+            <!-- Lista produktów w koszyku -->
+            <div class="cart-products">
+                <div class="cart-product">
+                    <div class="product-item">
+                        <img src="media/product1.jpg" alt="Produkt 1">
+                        <div class="product-details">
+                            <h3>Nazwa produktu 1</h3>
+                            <p class="product-price">Cena: 50 zł</p>
+                        </div>
+                    </div>
+                    <div class="product-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="product-total">
+                        <p>50 zł</p>
+                    </div>
+                    <div class="product-remove">
+                        <button>&times;</button>
+                    </div>
+                </div>
+
+                <div class="cart-product">
+                    <div class="product-item">
+                        <img src="media/product2.jpg" alt="Produkt 2">
+                        <div class="product-details">
+                            <h3>Nazwa produktu 2</h3>
+                            <p class="product-price">Cena: 30 zł</p>
+                        </div>
+                    </div>
+                    <div class="product-quantity">
+                        <input type="number" value="2" min="1">
+                    </div>
+                    <div class="product-total">
+                        <p>60 zł</p>
+                    </div>
+                    <div class="product-remove">
+                        <button>&times;</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Podsumowanie koszyka -->
+            <div class="cart-summary">
+                <p>Łącznie: <span>110 zł</span></p>
+            </div>
+
+            <div class="cart-actions">
+                <button class="continue-shopping">Kontynuuj zakupy</button>
+                <button class="checkout">Przejdź do płatności</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="#">O nas</a></li>
+                <li><a href="#">Polityka zwrotów</a></li>
+                <li><a href="#">Regulamin sklepu</a></li>
+                <li><a href="#">Pliki cookies</a></li>
+                <li><a href="#">Pomoc techniczna</a></li>
+            </ul>
+            <div class="social-media">
+                <img src="../media/facebook (1).svg" alt="Facebook" class="social-icon">
+                <img src="../media/instagram (1).svg" alt="Instagram" class="social-icon">
+                <img src="../media/twitter-alt-circle.svg" alt="Twitter" class="social-icon">
+                <img src="../media/youtube.svg" alt="YouTube" class="social-icon">
+            </div>
+            <p class="email">pomoc@sklepinternetowy.pl</p>
+        </div>
+</footer>
+</body>
+</html>
